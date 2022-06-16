@@ -17,7 +17,8 @@
 # **M**odel
 - The model is the core of application, and has all of the application's state informations.
 - However, it delegates to the controller for changing the state, and to the view for the visual aspects.
-- Thus, you can say that the model implements the Observer Pattern where the model is the observer of the controller.
+- And Whenever the model' state is changed, the model notifies this information to the view. 
+- So, you can say that the model implements the Observer Pattern where the view is the observer of the model.
 
 
 # **V**iew
