@@ -19,7 +19,7 @@ https://howsmyanimeprofilepicture.github.io/mvc-pattern-example/
 # **M**odel
 - The model is the core of application, and has all of the application's state informations.
 - However, it delegates to the controller for changing the state, and to the view for the visual aspects.
-- And Whenever the model's state is changed, the model notifies this information to the view. 
+- And whenever the model's state is changed, the model notifies this information to the view. 
 - In ohter words, the model and the view implement the Observer Pattern where the view is the observer of the model.
 
 
