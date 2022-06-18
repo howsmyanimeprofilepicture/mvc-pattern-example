@@ -1,7 +1,8 @@
 import ModelInterface from "./ModelInterface.js";
+import Observable from "./Observable.js";
 import Observer from "./Observer.js";
 
-export default class Model implements ModelInterface {
+export default class Model implements ModelInterface, Observable {
     private observers: Observer[] = [];
     private number: number;
 

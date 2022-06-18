@@ -2,10 +2,11 @@ import Controller from "./Controller.js";
 import ControllerInterface from "./ControllerInterface.js";
 import Model from "./Model.js";
 import ModelInterface from "./ModelInterface.js";
+import Observable from "./Observable.js";
 import View from "./View.js";
 
 function main() {
-    const model: ModelInterface = new Model(7);
+    const model: ModelInterface & Observable = new Model(7);
 
 
     const controller: ControllerInterface = new Controller(model);
